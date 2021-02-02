@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/sc_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_logout"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarlayout"
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_eeeeee"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="प्रसार शिक्षा निदेषालय\n
+(श्री कर्ण नरेन्द्र कृषि विश्वविद्यालय, जोबनेर) राजस्थान"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_666" />
+
+                <TextView
+                    android:id="@+id/txt_home_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_eeeeee"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center|start"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:scrollHorizontally="true"
+                    android:text="Kisan Ke Mobile No"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_header"
+                android:layout_margin="15dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_visitors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"
+                android:visibility="visible"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:background="#F2BF25"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_visitors" />
+
+                    <TextView
+                        android:id="@+id/txt_ttl_visitors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_aboutus"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#85B009"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="केंद्र के बारे में"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="About KVK"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_Faculty"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#D6AA27"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_staff" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="कर्मचारी"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Staff"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_training"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#F2BF25"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="प्रशिक्षण कार्यक्रम"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Training Schedule"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_packages"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#F28526"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_4" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="पैकेज"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Package"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_query"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#831B7C"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_5" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="सवाल पूछें"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Query"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_query_solution"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#9B0F36"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_6" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="समाधान सवाल के"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Query Solution"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_photo_gallery"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#07788A"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_7" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="चित्र प्रदर्शनी"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Photo Gallery"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_contact_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#10507E"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_8" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="संपर्क करें"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Contact Us"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_Ekai"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#CA5C3A"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_home_9" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="प्रदर्शन इकाइयां"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Display Units"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_Agricultural_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#653962"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_icon_4" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="कृषि समाचार"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Agricultural News"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_Weather_today"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#da2703"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_icon_3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="आज मौसम"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Weather Today"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_Monthly_agricultural_work"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#38a8d8"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_icon_7" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="मासिक कृषि कार्य"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_Monthly_Agricultural_Work"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Monthly Agricultural Work"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_Story_of_farmer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#024572"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_icon_5" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="कहानी किसान की"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Story of the farmer"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_Available_for_sale"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="#0a8563"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_icon_2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="विक्रय हेतु उपलब्ध"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_photo"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:gravity="center|start"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:text="Available for sale"
+                                    android:textColor="@color/color_faculty"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <!--  <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="40dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:background="@drawable/dr_member_background_shape"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="Go On Website"
+                  android:textColor="@color/white" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="40dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:background="@drawable/dr_donate_background_shape"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="Logout"
+                  android:textColor="@color/white" />
+          </LinearLayout>-->
+
+        <Button
+            android:id="@+id/btn_go_for_website"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:inputType="text"
+            android:text="वेबसाइट पर जाएं"></Button>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:inputType="text"
+            android:text="लॉगआउट"
+            android:visibility="gone"></Button>
+
+        <Button
+            android:id="@+id/btn_visitors"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:inputType="text"
+            android:text=""
+            android:visibility="gone"></Button>
+
+    </LinearLayout>
+</RelativeLayout>

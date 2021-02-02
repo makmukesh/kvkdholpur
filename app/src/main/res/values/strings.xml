@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">KVK Dholpur</string>
+
+    <string name="txt_networkAlert">No Network Connectivity</string>
+
+    <!--Strings Related to InputType Digits-->
+    <string name="alphanumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</string>
+    <string name="numberic">0123456789</string>
+
+    <string name="error_required_user_id">Please Enter Mobile No.</string>
+    <string name="error_required_password">Please Enter Password.</string>
+    <!--Strings Related to Forgot Password-->
+    <string name="btn_submit">Submit</string>
+    <string name="note">Note :</string>
+    <string name="note_detail">1 ) Your password will be sent on your registered mobile number. \n2 ) If you don\'t receive SMS within one hour please contact our support.</string>
+    <string name="click_here_to_login">Click Here to Login.</string>
+    <!-- logout message -->
+    <string name="txt_signout_message">Are you sure you want to logout ?</string>
+    <string name="txt_signout_yes">Yes</string>
+    <string name="txt_signout_no">No</string>
+
+    <string name="divider_title" formatted="false">Divider %d</string>
+    <string name="item_title" formatted="false">Item %d</string>
+    <string name="custom_view_title">This is a custom view!</string>
+    <string name="item_clicked_toast" formatted="false">Item %d clicked</string>
+    <string name="show_bottom_sheet_preference_category_title">Show example bottom sheet</string>
+    <string name="show_bottom_sheet_preference_key">show_bottom_sheet_preference_key</string>
+    <string name="show_bottom_sheet_preference_title">Show bottom sheet</string>
+    <string name="show_custom_bottom_sheet_preference_key">show_custom_bottom_sheet_preference_key</string>
+    <string name="show_custom_bottom_sheet_preference_title">Show bottom sheet with custom content</string>
+    <string name="show_intent_bottom_sheet_preference_key">show_intent_bottom_sheet_preference</string>
+    <string name="show_intent_bottom_sheet_preference_title">Show bottom sheet with intent</string>
+    <string name="bottom_sheet_style_preference_category_title">Style</string>
+    <string name="bottom_sheet_style_preference_key">style_preference_key</string>
+    <string name="bottom_sheet_style_preference_title">Style</string>
+    <string name="bottom_sheet_style_preference_default_value">list</string>
+    <string name="bottom_sheet_title_preference_category_title">Title</string>
+    <string name="show_bottom_sheet_title_preference_key">show_bottom_sheet_title_preference_key</string>
+    <string name="show_bottom_sheet_title_preference_title">Show bottom sheet title</string>
+    <string name="bottom_sheet_title_preference_key">bottom_sheet_title_preference_key</string>
+    <string name="bottom_sheet_title_preference_title">Bottom sheet title</string>
+    <string name="bottom_sheet_title_preference_default_value">Title</string>
+    <string name="bottom_sheet_icon_preference_category_title">Icon</string>
+    <string name="show_bottom_sheet_icon_preference_key">show_bottom_sheet_icon_preference_key</string>
+    <string name="show_bottom_sheet_icon_preference_title">Show bottom sheet icon</string>
+    <string name="bottom_sheet_items_preference_category_title">Items &amp; Dividers</string>
+    <string name="divider_count_preference_key">divider_count_key</string>
+    <string name="divider_count_preference_title">Number of dividers</string>
+    <string name="divider_count_preference_default_value">0</string>
+    <string name="show_divider_title_preference_key">show_divider_title_preference_key</string>
+    <string name="show_divider_title_preference_title">Show divider title</string>
+    <string name="item_count_preference_key">item_count_preference_key</string>
+    <string name="item_count_preference_title">Number of items per divider</string>
+    <string name="item_count_preference_default_value">5</string>
+    <string name="show_item_icons_preference_key">show_item_icons_preference_key</string>
+    <string name="show_item_icons_preference_title">Show icons next to items</string>
+    <string name="disable_items_preference_key">disable_items_preference_key</string>
+    <string name="disable_items_preference_title">Disable items</string>
+    <string name="theme_preference_category_title">Theme</string>
+    <string name="theme_preference_key">theme_preference_key</string>
+    <string name="theme_preference_title">Theme</string>
+    <string name="theme_preference_default_value">0</string>
+
+    <string-array name="style_entries">
+        <item>List</item>
+        <item>Two-columned list</item>
+        <item>Grid</item>
+    </string-array>
+
+    <string-array name="style_values">
+        <item>list</item>
+        <item>list_columns</item>
+        <item>grid</item>
+    </string-array>
+
+    <string-array name="divider_count_entries">
+        <item>No dividers</item>
+        <item>1 Divider</item>
+        <item>2 Dividers</item>
+    </string-array>
+
+    <string-array name="divider_count_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="item_count_entries">
+        <item>1 Items</item>
+        <item>3 Items</item>
+        <item>5 Items</item>
+    </string-array>
+
+    <string-array name="item_count_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="spinner_selectcategory">
+        <item>-- No Category Found --</item>
+    </string-array>
+    <string-array name="spinner_selectcategory1">
+        <item>-- No Sub Category Found --</item>
+    </string-array>
+
+    <string name="toast_http_code_error">Problem loading page, http error code : </string>
+    <string name="toast_io_exception">We can\'t load this page for some reason.</string>
+    <string name="toast_ssl_error">Secure connection failed.</string>
+
+    <string name="password">Password</string>
+    <string name="unlock">Unlock Secure PDF</string>
+    <string name="meta">File Info</string>
+    <string name="share">Share File</string>
+    <string name="print">Print File</string>
+    <string name="pick_file">Pick File</string>
+
+</resources>

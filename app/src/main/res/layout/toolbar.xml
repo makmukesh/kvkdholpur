@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:maxHeight="80dp"
+        android:minHeight="80dp"
+        android:paddingStart="00dp"
+        android:paddingLeft="00dp"
+        android:paddingEnd="00dp"
+        android:paddingRight="00dp"
+
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:theme="@style/ToolBarStyle">
+        <!--android:background="@drawable/drop_shadow"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:background="@drawable/drop_shadow"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_nav_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/heading"
+                android:padding="5dp"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible"  />
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_nav_seond"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:src="@drawable/img2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?actionBarSize"
+                android:gravity="center|start"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/logo" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:visibility="gone"
+                android:gravity="center|start" >
+
+                <ImageView
+                    android:id="@+id/img_nav_logout"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:focusableInTouchMode="false"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_logout" />
+            </LinearLayout>
+         </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

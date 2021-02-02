@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.vpipl.kvkdholpur.AboutUsActivity">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="* कृषि विज्ञान केंद्र, धौलपुर *"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:ignore="Deprecated" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img2"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_toRightOf="@+id/iv_left"
+            android:gravity="center"
+            android:text="प्रसार शिक्षा निदेषालय\n
+(श्री कर्ण नरेन्द्र कृषि विश्वविद्यालय, जोबनेर) राजस्थान"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/logo"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_img1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_vision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_img1"
+                    android:layout_weight="1"
+                    android:text="एक परिचय"
+                    android:textColor="#444"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/iv_img1"
+                android:text="कृषि विज्ञान केन्द्र की स्थापना का कार्य शिक्षा आयोग (1964-66) द्वारा की गई। एक महत्वपूर्ण सिफारिश के आधार पर प्रारम्भ हुआ था। आयोग ने ग्रामीण क्षेत्रों से बड़ी संख्या में आने वाले युवक और युवतियों को प्रशिक्षण सम्बन्धी आवश्यकताओं को पूरा करने के लिए माध्यमिक स्तर से पूर्व और बाद के स्तरों पर कृषि और कृषि समन्वय क्षेत्रों में व्यावसायिक शिक्षा प्रदान करने के लिए विशिष्ट संस्थाओं की स्थापना हेतु गंभीर प्रयास करने की सिफारिश की। आयोग की सिफारिश पर 1966-72 के दौरान शिक्षा मंत्रालय,  कृषि मंत्रालय, योजना आयोग, भारतीय कृषि अनुसंधान परिषद और अन्य संबंधित संस्थाओं द्वारा चर्चा की गयी। अन्त में भा.कृ.अ.प. ने कृषि कार्य करने वाले किसानों, स्कूल छोड़ चुके विद्यार्थियों और ग्रामीण स्तर पर कार्य करने वाले प्रसार कार्यकर्ताओं को व्यावसायिक प्रशिक्षण देने के लिए पहले कृषि विज्ञान केन्द्र की स्थापना 1974 में तमिलनाडू कृषि विश्वविद्यालय, कोयम्बटूर के प्रशासनिक नियंत्रण में पांडिचेरी में की गई।"
+                android:textColor="#444"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_mission"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="स्थापना"
+                    android:textColor="#444"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="कृषि विज्ञान केन्द्र धौलपुर की स्थापना भारतीय कृषि अनुसंधान परिषद नई दिल्ली द्वारा 17 अगस्त 1992 को की गई। इस केन्द्र की प्रशासनिक व्यवस्था श्री कर्ण नरेन्द्र कृषि विश्वविद्यालय जोबनेर जिला जयपुर के अन्तर्गत आती है। कृषि विज्ञान केन्द्र जिला धौलपुर में औंडेला रोड पर रीको औद्योगिक क्षेत्र में जिला मुख्यालय से 4.0 कि.मी. दूरी पर स्थापित है।"
+                android:textColor="#444"
+                android:textSize="12dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_mission_vision"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="विजन"
+                    android:textColor="#444"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="कृषि में उत्पादकता, लाभप्रदता एवं स्थिरता को बढाने हेतु विज्ञान एवं तकनीकी आधारित  विकास "
+                android:textColor="#444"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_mission_mission"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="मिशन"
+                    android:textColor="#444"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="कृषि पारिस्थितिकी परिपेक्ष में उचित तकनीकी के समागम द्वारा कृषि एवं सम्बधित क्षेत्रों में कृषक केन्द्रित विकास करना। "
+                android:textColor="#444"
+                android:textSize="12dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_mission_adhiya"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="अध्यादेश "
+                    android:textColor="#444"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="प्रौद्योगिकी मूल्याकन एवं प्रदर्शन का अनुप्रयोग एवं क्षमता विकास "
+                android:textColor="#444"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="गतिविधियाॅः"
+                    android:textColor="#444"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="1.विभिन्न शस्य-जलवायु एवं सामाजिक-आर्थिक परिस्थितियों में प्रौद्योगिकियों की जाॅच एंव पुष्टि करना।
+\n2.नवीनतम कृषि तकनीक का वैज्ञानिकों की देखरेख में किसानों के खेतों पर प्रदर्शन आयोजित करना।
+\n3.आधुनिक कृषि तकनीकी में किसानों का ज्ञान एवं क्षमता बढाने हेतु प्रशिक्षण आयोजित करना और तकनीकी विकास के अग्रिम क्षेत्र में प्रसार कार्यकर्ताओं के आमुखिकरण हेतु प्रशिक्षण आयोजित करना।
+\n4.ग्रामीण युवाओं एवं युवतियों के लिए व्यवसायिक कौशल विकास प्रशिक्षण आयोजित करना।
+\n5.जिले की कृषि अर्थव्यवस्था सुधारने हेतु सार्वजनिक, निजी एवं स्वयंशाषी क्षेत्रों को बढावा देने के लिए कृषि तकनीक ज्ञान एवं संसाधन के कृषि तकनीकी केन्द्र के रूप में कार्य करना।
+\n6.विभिन्न रूचि के विषयों पर किसानों को सूचना संचार तकनीकी एवं अन्य संचार माध्यमों के उपयोग द्वारा कृषि सलाह प्रदान करना।
+"
+                android:textColor="#444"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="केंद्र की प्राथमिकताएं"
+                    android:textColor="#444"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="1.किसानो तथा राज्यों के कृषि/बागवानी/मत्सकीय/पशुपालन विभागो/गैरसरकारी संगठनो के कृषि प्रसार कार्यकर्ताओं के लिये नवीनतम कृषि प्रोद्योगिकी का प्रदर्शन करना ताकि इन प्रौैद्योगिकी के विकास तथा उसे अपनाने के बीच की समयावधि न्यूनतम की जा सके।
+\n2.किसानो को सामाजिक आर्थिक परिस्थितियों में प्रोद्योगिकी की जांच और पुष्टि करना ताकि उत्पादन में आने वाली बाधाओं का अध्ययन किया जा सके और प्रौद्योगकी को उनके अनुकूल बनाया जा सके।
+\n3.कृषि कार्य करने वाले किसानो/कृषक, महिलाआंे, ग्रामीण युवको और खेत स्तर के प्रसार कार्यकर्ताओ को ‘करके सीखे‘ और ‘करके पढाओं‘ विधि द्वारा प्रशिक्षण प्रदान करना।
+\n4.जिला स्तर के विभिन्न संगठनो कृषि/बागवानी/पशुपालन/मत्सिकीय तथा गैर सरकारी संगठनो को उनके प्रसार कार्यक्रमो के लिये प्रशिक्षण और संचार सुविधायें उपलव्ध कराना।
+\n5.कृषको को प्रशिक्षण कार्यक्रम के माध्यम से क्षारीय लवणीय मृदा व खारे पानी की स्थिती में लाभकारी फसल उत्पादन की जानकारी उपलब्ध कराना।
+\n6.कृषि प्रदर्शनी, कृषि विज्ञान मेले एवं किसान दिवस के माध्यम से नवीनतम तकनीकी की जानकारी उपलब्ध कराना।
+\n7.कृषि विज्ञान केन्द्र कार्यक्रमों में सामाजिक, आर्थिक रूप से पिछडे कृषको के जीवन स्तर में बेरोजगारोन्मुखी सुधार में प्राथमिकता देना।
+\n8.कृषक, कृषक महलाआंे एवं युवाओ की कृषि संबंधित समस्याओं को वैज्ञानिको द्वारा केन्द्र पर, खेत पर एवं पत्र व्यवहार द्वारा समाधान।
+\n9.विभिन्न संचाार माध्यमांे जैसे - फिल्म, आकाशवाणी, प्रपत्रो प्रेस विज्ञप्ति, कृषि प्रदर्शनी क्षेत्रीय भ्रमण, कृषि साहित्य आदि द्वारा नवीन जानकारी का किसानों एवं कृषक संगठनों के साथ आदान-प्रदान।
+\n10.सहयोगी विभागो जैसे - कृषि, उद्यान, मृदा सरंक्षण एवं जलग्रहण व पशुपालन विभागो के सहयोग से व्यावहारिक प्रशिक्षण प्रदान करना।
+\n11.जिले में कृषि विकास के लिये क्षेत्र की आवश्यकता, प्राकृतिक स्त्रोत एवं सुव्यवस्था के आधार पर सरकारी, गैर सरकारी एवं स्वयं सेव संस्थाओं का सहयोग प्राप्त कर प्रशिक्षण एवं प्रदर्शनों का आयोजन।
+\n12.कृषि विश्वविधालय के बीज उत्पादन कार्यक्रम के तहत् कृषि फार्म पर कृषको को गुणवत्ता युक्त उन्नत किस्म के बीज उपलव्ध कराने की दृष्टि से बीजोत्पादन कार्यक्रम आयोजित करना।
+\n13.कृषि विज्ञान मेले एवं किसान दिवस आयोजित कर प्रतिवर्ष हजारो की संख्या में कृषको/कृषक महिलाओं एवं युवाओं को नवीनतम जानकारी प्रदान करना। कृषक  वैज्ञानिक सम्वाद व किसान गोष्टी का आयोजन कर किसानो की समस्याओं का समाधान करना।
+"
+                android:textColor="#444"
+                android:textSize="12dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

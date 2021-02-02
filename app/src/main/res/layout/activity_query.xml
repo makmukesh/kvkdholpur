@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="1.0dip"
+        android:background="@drawable/shape_bg_white_8dp"
+        android:orientation="vertical"
+        android:padding="16.0dip">
+
+        <ImageView
+            android:id="@+id/imageCancelInActFeedback"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_margin="16.0dip"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="4.0dip"
+            android:src="@drawable/white_cancel_icon"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:text="Send Query / Feedback"
+            android:textColor="@color/black"
+            android:textSize="24.0sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:gravity="left"
+            android:text="Please let us know how to make this app better for you!"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginLeft="25.0dip"
+                        android:text="अपना नाम दर्ज करें"
+                        android:textColor="@color/color_faculty"
+                        android:textSize="14.0sp"
+                        android:visibility="visible" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="16.0dip"
+                        android:background="@drawable/style_edit_text_design"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtxt_query_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="Your Name"
+                            android:inputType="text"
+                            android:padding="16.0dip"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textSize="14.0sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_voice_name"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_mic_black_24dp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtxt_query_mobileno"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginRight="16.0dip"
+                        android:background="@drawable/style_edit_text_design"
+                        android:digits="0123456789"
+                        android:hint="Mobile number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="16.0dip"
+                        android:phoneNumber="true"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="14.0sp"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:layout_marginLeft="25.0dip"
+                        android:text="अपनी समस्या और सुझाव दर्ज करें"
+                        android:textColor="@color/color_faculty"
+                        android:textSize="14.0sp"
+                        android:visibility="visible" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="16.0dip"
+                        android:background="@drawable/style_edit_text_design"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtxt_query"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:hint="Write your query / feedback"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:padding="16.0dip"
+                            android:textColor="@color/black"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textSize="14.0sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_voice"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_mic_black_24dp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.0dip"
+                            android:text="Select Photo / चित्र का चयन करें"
+                            android:textColor="@color/color_faculty"
+                            android:textSize="14.0sp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/iv_query_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginTop="10dip"
+                            android:layout_marginRight="16.0dip"
+                            android:background="@drawable/bg_rectangle_round_white"
+                            android:src="@drawable/ic_add_image"></ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtFeedbackInActFeddback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:text="Please write some feedback"
+                        android:textColor="#ffff0000"
+                        android:textSize="12.0sp"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/txtEnterMailInActFeddback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:text="Please enter a valid email ID"
+                        android:textColor="#ffff0000"
+                        android:textColorHint="@color/color_eeeeee"
+                        android:textSize="12.0sp"
+                        android:visibility="gone" />
+
+
+                    <Button
+                        android:id="@+id/btnSubmitInActFeedback"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_marginTop="32.0dip"
+                        android:layout_marginRight="16.0dip"
+                        android:layout_marginBottom="16.0dip"
+                        android:background="@drawable/button_background"
+                        android:text="Submit"
+                        android:textColor="#666" />
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/layout_error_msg_in_act_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/error_msg_textview_in_act_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp" />
+
+                <View
+                    android:id="@+id/error_msg_inner_layout_in_act_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

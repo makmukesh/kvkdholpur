@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vpipl.kvkdholpur">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.vpipl.kvkdholpur.Utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.vpipl.kvkdholpur.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vpipl.kvkdholpur.MainActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.QueryActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.pdfViewerActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.PhotoGalleryActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.PhotoGalleryDetailsActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.FacultyListActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.ViewPdf" />
+        <activity android:name="com.vpipl.kvkdholpur.PackageListActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.underConsActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.AboutUsActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.ContactUsActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.Login_Activity" />
+        <activity android:name="com.vpipl.kvkdholpur.Forget_Password_Activity" />
+        <activity android:name="com.vpipl.kvkdholpur.Tranning_ListActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.QuerySolutionListActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.Query_Detail_Activity" />
+        <activity android:name="com.vpipl.kvkdholpur.Register_Activity" />
+        <activity android:name="com.vpipl.kvkdholpur.CategoryListActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.Prakashan_ListActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.Ekai_ListActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.SampleActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.RemotePDFActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.Login_Local_Activity" />
+        <activity android:name="com.vpipl.kvkdholpur.AgriculturalNewsActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.MonthlyAgriculturalWorkActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.WeatherTodayActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.AvailableForSaleActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.StoryOfTheFarmerActivity" />
+        <activity android:name="com.vpipl.kvkdholpur.YoutubePlayerActivity" />
+    </application>
+
+</manifest>

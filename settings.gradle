@@ -1,0 +1,3 @@
+include ':YouTubeAndroidPlayerApi'
+rootProject.name='KVK Dholpur'
+include ':app'

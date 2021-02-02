@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.vpipl.kvkdholpur.ContactUsActivity">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:orientation="vertical">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:padding="5dp"
+                     android:id="@+id/rl_cate"
+                     android:background="@drawable/drop_shodow_action_background"
+                     android:visibility="gone">
+
+                     <Spinner
+                         android:id="@+id/spinner_selectcategory"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="-10dp"
+                         android:layout_marginLeft="-10dp"
+                         android:background="@null"
+                         android:entries="@array/spinner_selectcategory"
+                         android:padding="10dp"
+                         android:textCursorDrawable="@null">
+
+                     </Spinner>
+
+                     <LinearLayout
+                         android:id="@+id/lin0"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginRight="20dp"
+                         android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+                         android:orientation="vertical"></LinearLayout>
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:padding="5dp"
+                     android:id="@+id/rl_subcate"
+                     android:background="@drawable/drop_shodow_action_background"
+                     android:layout_marginTop="10dp"
+                     android:visibility="gone">
+
+                     <Spinner
+                         android:id="@+id/spinner_selectcategory1"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginStart="-10dp"
+                         android:layout_marginLeft="-10dp"
+                         android:background="@null"
+                         android:entries="@array/spinner_selectcategory"
+                         android:padding="10dp"
+                         android:textCursorDrawable="@null">
+
+                     </Spinner>
+
+                     <LinearLayout
+                         android:id="@+id/lin1"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginRight="20dp"
+                         android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+                         android:orientation="vertical"></LinearLayout>
+                 </RelativeLayout>
+
+             </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_data_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_no_data_found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_icon_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_margin="3dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_data_found"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/no_data_found" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingBottom="50dp"
+                        android:text="No Data Found .... "
+                        android:textColor="#534D4D"
+                        android:textSize="16dp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
